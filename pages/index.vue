@@ -7,12 +7,12 @@
     <div class="container search">
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Введите название"
         @keyup.enter="$fetch"
         v-model.lazy="searchInput"
       />
       <button v-show="searchInput !== ''" @click="clearSearch" class="button">
-        Clear Search
+        Очистить поиск
       </button>
     </div>
 
@@ -55,7 +55,7 @@
               class="button button-light"
               :to="{ name: 'movies-id', params: { id: movie.id } }"
             >
-              Get More Info
+              Подробнее
             </NuxtLink>
           </div>
         </div>
@@ -78,7 +78,7 @@
               }}<span v-if="movie.title.length > 25">...</span>
             </p>
             <p class="release">
-              Released:
+              Релиз:
               {{
                 new Date(movie.release_date).toLocaleString('en-us', {
                   month: 'long',
@@ -91,7 +91,7 @@
               class="button button-light"
               :to="{ name: 'movies-movieid', params: { id: movie.id } }"
             >
-              Get More Info
+              Подробнее
             </NuxtLink>
           </div>
         </div>

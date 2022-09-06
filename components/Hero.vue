@@ -3,9 +3,10 @@
     <img src="../assets/images/movieHero.jpg" alt="" />
     <div class="text-container">
       <div class="text">
-        <span class="mini-heading">Now Stremaing</span>
-        <h1><span>Now</span> Streaming</h1>
-        <a href="#movie-grid" class="button">View Movies</a>
+				<h1><span>Cinema</span> App</h1>
+        <span class="mini-heading">Свежие новинки только у нас!</span>
+				<br>
+        <a href="#movie-grid" class="button">Выбрать фильм</a>
       </div>
     </div>
   </div>
@@ -88,6 +89,7 @@ export default {
     .button {
       font-size: 20px;
       align-self: flex-start;
+			margin-top: 20px;
     }
   }
 }

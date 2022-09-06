@@ -4,7 +4,7 @@
 
   <!-- Movie Info -->
   <div v-else class="single-movie container">
-    <NuxtLink class="button" :to="{ name: 'index' }"> Back </NuxtLink>
+    <NuxtLink class="button" :to="{ name: 'index' }"> Назад </NuxtLink>
     <div class="movie-info">
       <div class="movie-img">
         <img
@@ -13,12 +13,12 @@
         />
       </div>
       <div class="movie-content">
-        <h1>Title: {{ movie.title }}</h1>
+        <h1>{{ movie.title }}</h1>
         <p class="movie-fact tagline">
-          <span>Tagline:</span> "{{ movie.tagline }}"
+          <span>Подзаголовок:</span> "{{ movie.tagline }}"
         </p>
         <p class="movie-fact">
-          <span>Released:</span>
+          <span>Релиз:</span>
           {{
             new Date(movie.release_date).toLocaleString('en-us', {
               month: 'long',
@@ -28,10 +28,10 @@
           }}
         </p>
         <p class="movie-fact">
-          <span>Duration:</span> {{ movie.runtime }} minutes
+          <span>Длительность:</span> {{ movie.runtime }} минут
         </p>
         <p class="movie-fact">
-          <span>Revenue:</span>
+          <span>Доход:</span>
           {{
             movie.revenue.toLocaleString('en-us', {
               style: 'currency',
@@ -39,7 +39,7 @@
             })
           }}
         </p>
-        <p class="movie-fact"><span>Overview:</span> {{ movie.overview }}</p>
+        <p class="movie-fact"><span>Предосмотр:</span> {{ movie.overview }}</p>
       </div>
     </div>
   </div>
